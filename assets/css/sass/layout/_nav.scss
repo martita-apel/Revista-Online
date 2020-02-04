@@ -3,16 +3,17 @@
   margin: 0 30px;
 }
 
-.logo {
-  font-size: 24px;
+.menu__logo {
+  font-size: 28px;
   font-weight: bold;
   text-transform: uppercase;
   display: inline-block;
+  vertical-align: middle;
 }
 
-.nav {
+.menu__nav {
   display: inline-block;
-  width: 90%;
+  width: 88%;
   text-align: right;
 
   & ul li a {
@@ -25,6 +26,13 @@
     padding: 15px 10px;
   }
 }
+
 .input-menu {
   border-radius: 7px;
+}
+
+@media only screen and (max-device-width: 768px) {
+  #nosotros {
+    display: none;
+  }
 }

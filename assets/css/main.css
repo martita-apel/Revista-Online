@@ -37,7 +37,7 @@ body {
   }
 
   .col-xs-6 {
-    grid-column: span 5;
+    grid-column: span 6;
   }
 
   .col-xs-5 {
@@ -86,7 +86,7 @@ body {
   }
 
   .col-sm-6 {
-    grid-column: span 5;
+    grid-column: span 6;
   }
 
   .col-sm-5 {
@@ -135,7 +135,7 @@ body {
   }
 
   .col-md-6 {
-    grid-column: span 5;
+    grid-column: span 6;
   }
 
   .col-md-5 {
@@ -184,7 +184,7 @@ body {
   }
 
   .col-lg-6 {
-    grid-column: span 5;
+    grid-column: span 6;
   }
 
   .col-lg-5 {
@@ -233,7 +233,7 @@ body {
   }
 
   .col-xl-6 {
-    grid-column: span 5;
+    grid-column: span 6;
   }
 
   .col-xl-5 {
@@ -261,23 +261,24 @@ body {
   margin: 0 30px;
 }
 
-.logo {
-  font-size: 24px;
+.menu__logo {
+  font-size: 28px;
   font-weight: bold;
   text-transform: uppercase;
   display: inline-block;
+  vertical-align: middle;
 }
 
-.nav {
+.menu__nav {
   display: inline-block;
-  width: 90%;
+  width: 88%;
   text-align: right;
 }
-.nav ul li a {
+.menu__nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
 }
-.nav li {
+.menu__nav li {
   display: inline-block;
   padding: 15px 10px;
 }
@@ -286,12 +287,17 @@ body {
   border-radius: 7px;
 }
 
+@media only screen and (max-device-width: 768px) {
+  #nosotros {
+    display: none;
+  }
+}
 .contenido {
   width: 94%;
   margin: 0 30px;
 }
 
-.listad-noticias {
+.listado-noticias {
   width: 75%;
   display: inline-block;
   margin-bottom: 30px;
@@ -301,7 +307,6 @@ body {
   width: 31%;
   display: inline-block;
   margin: 5px;
-  cursor: pointer;
 }
 
 .cuerpo img {
@@ -346,11 +351,6 @@ body {
 
 @media only screen and (max-width: 1245px) {
   .noticias-destacadas img {
-    height: 200px;
-  }
-}
-@media only screen and (max-width: 1092px) {
-  .noticias-destacadas img {
     height: 180px;
   }
 }
@@ -359,8 +359,28 @@ body {
     display: none;
   }
 
-  .listad-noticias {
+  .listado-noticias {
     width: 100%;
+  }
+}
+@media only screen and (max-device-width: 768px) {
+  .noticia {
+    width: 48%;
+    font-size: 120%;
+  }
+
+  .cuerpo img {
+    height: 550px;
+  }
+}
+@media only screen and (max-device-width: 576px) {
+  .noticia {
+    width: 90%;
+    margin: 0 48px;
+  }
+
+  .cuerpo img {
+    height: 550px;
   }
 }
 .newsletter {
